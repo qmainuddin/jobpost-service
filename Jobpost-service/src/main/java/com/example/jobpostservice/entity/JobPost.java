@@ -14,13 +14,12 @@ public class JobPost   {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Version
+
     private Long version;
     @CreationTimestamp
     @Column(name = "created_date")
     private Date createdDate;
     @Column(name = "last_modified_date", nullable = false)
-
     @UpdateTimestamp
     private Date lastModifiedDate;
     private String title;

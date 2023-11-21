@@ -19,7 +19,6 @@ import java.io.Serializable;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class JobPostDto implements Serializable {
     private Long id;
-    private Long version;
     @NotNull
     @NotEmpty
     @NotBlank
